@@ -1,0 +1,42 @@
+.bottomFooter {
+    text-align: center;
+    padding: 50px;
+    background-color: #222222;
+    position: relative;
+    z-index: 2;
+    .header {
+        font-size: 25px;
+        color: white;
+    }
+    .iconsBlock {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        color: white;
+        div {
+            padding: 18px;
+            border: 1px solid silver;
+            margin-left: 6px;
+            font-size: 17px;
+        }
+    }
+    .aboutWebsite {
+        color: silver;
+        span {
+            color: green;
+        }
+    }
+    @media screen and (max-width: 414px) {
+       padding: 30px;
+       .header {
+           font-size: 18px;
+       }
+       .iconsBlock {
+           div {
+               font-size: 14px;
+               padding: 10px;
+           }
+       }
+    }
+}

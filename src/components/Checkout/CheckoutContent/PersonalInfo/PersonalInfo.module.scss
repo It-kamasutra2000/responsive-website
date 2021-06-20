@@ -1,0 +1,72 @@
+%border {
+    border: 1px solid #f0f0f0;
+}
+
+.personalInfo {
+    width: 70%;
+    outline: 0px solid red;
+    margin: auto;
+    padding: 20px;
+    @extend %border;
+    @media screen and (max-width: 1100px) {
+        width: 90%;
+    }
+    .personalInfoHeader {
+        font-size: 20px;
+        margin: 20px 0 30px 0;
+       border-bottom: 2px solid #f0f0f0;
+    }
+    .form {
+        label {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .fromItem {
+            margin: 0px;
+        }
+        .bottomBlock {
+            @extend %border;
+            div:first-child {
+                font-size: 18px;
+                margin: 50px 0 10px 0; 
+            }
+            .button {
+                width: 120px;
+                height: 50px;
+                background: #00BBA7;
+                font-size: 16px;
+                text-transform: uppercase;
+                &:hover {
+                    background: #00BAA6;
+                }
+            }
+            .reset {
+                margin: 0 0 0 20px;
+            }
+        }
+        .fieldError {
+            color: red;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        .form {
+            label {
+                font-size: 14px;
+            }
+            .bottomBlock {
+                div:first-child {
+                    font-size: 14px;
+                    margin: 50px 0 10px 0; 
+                }
+                .button {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+                .reset {
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+    }
+}

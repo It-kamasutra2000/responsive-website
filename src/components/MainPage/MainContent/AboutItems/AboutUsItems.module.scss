@@ -1,0 +1,46 @@
+%text-align {
+    text-align: center;
+}
+
+.aboutUsItem {
+    margin-top: 50px;
+    max-width: 30%;
+    outline: 0px solid red;
+    .icon {
+        font-size: 50px;
+        color: #00BBA7;
+        @extend %text-align
+    }
+    .header {
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: 600;
+        @extend %text-align
+    }
+    .text {
+        font-size: 17px;
+    }
+    .link {
+        font-size: 20px;
+        @extend %text-align
+    };
+    @media screen and (max-width: 1024px){
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    @media screen and (max-width: 414px) {
+        margin: 30px 0 0 0;
+        .icon {
+            font-size: 30px;
+        }
+        .header {
+            font-size: 15px;
+        }
+        .text {
+            font-size: 14px;
+        }
+        .link {
+            font-size: 15px;
+        }
+    }
+}

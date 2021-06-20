@@ -1,0 +1,48 @@
+.purchaseField {
+    width: 30%;
+    outline: 0px solid red;
+    //padding: 15px;
+    .purchase {
+        text-align: center;
+        padding: 15px 30px;
+        background-color: #33c9b9;
+        a {
+            color: white;
+            font-size: 25px;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .productInformation {
+        margin-top: 15px;
+        font-size: 17px;
+        padding: 20px 15px;
+        border: 1px solid #D8D8D8;
+        @media screen and (max-width: 1450px){
+          font-size: 15px;
+        }
+        @media screen and (max-width: 1300px){
+           font-size: 17px;
+        }
+        div {
+            font-weight: 500;
+            span {
+                font-weight: 350;
+            }
+        }
+    }
+    @media screen and (max-width: 1300px){
+        width: 100%;
+    }
+    @media screen and (max-width: 414px){
+        .purchase {
+            a {
+                font-size: 20px;
+            }
+        }
+        .productInformation {
+            font-size: 14px;
+        }
+    }
+}

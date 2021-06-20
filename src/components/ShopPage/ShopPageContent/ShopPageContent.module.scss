@@ -1,0 +1,20 @@
+.shopPage {
+    .ourProductsItems {
+        display: flex;
+        justify-content: space-around;
+        //align-content: space-between;
+        flex-wrap: wrap;
+        outline: 0px solid red;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 25px;
+    }
+    .stars {
+        text-align: center;
+        color: silver;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}

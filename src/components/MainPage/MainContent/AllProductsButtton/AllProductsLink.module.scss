@@ -1,0 +1,42 @@
+$color: white;
+%padding {
+    padding: 13px;
+}
+
+.allProductsLink {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 5px;
+    min-width: 250px;
+    font-size: 20px;
+    .allProducts {
+        background-color: #00bba7;
+        @extend %padding;
+        a {
+            color: $color;
+        }
+    }
+    .starBlock {
+        background-color: #009686;
+        @extend %padding;
+        .star {
+            color: white;
+            font-size: 30px;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        font-size: 15px;
+        .allProducts {
+            padding: 8px;
+        }
+        .starBlock {
+            padding: 8px;
+            .star {
+                font-size: 20px;
+            }
+        }
+    }
+}

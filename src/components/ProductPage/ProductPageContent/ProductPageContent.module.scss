@@ -1,0 +1,18 @@
+.productPageContent {
+    .header {
+        padding-top: 40px;
+        text-align: center;
+    }
+    .productsInf {
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width: 1300px){
+           flex-wrap: wrap;
+        }
+    }
+    .stars {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}

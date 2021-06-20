@@ -1,0 +1,77 @@
+%fontS {
+    font-size: 17px;
+}
+%border {
+    border: 1px solid#f0f0f0;
+}
+
+.table {
+    outline: 0px solid red;
+    width: 70%;
+    margin: auto;
+    @extend %fontS;
+    @extend %border;
+    .topBlock> div  {
+        @extend %border;
+    }
+    @media screen and (max-width: 1100px) {
+        width: 90%;
+    }
+    .imgBlock {
+        outline: 0px solid red;
+        img {
+            width: 100px;
+            object-fit: cover;
+        }
+    }
+    .topBlock {
+        display: flex;
+        flex-wrap: wrap;
+        outline: 0px solid red;
+       & .itemName, .itemPrice, .actions, .price, .RemoveLink {
+            padding: 10px 20px;
+       }
+       .itemName, .imgBlock {
+            width: 50%;
+       }
+       .itemPrice, .actions, .price, .RemoveLink {
+           width: 25%
+       }
+       .itemName, .itemPrice, .actions {
+           font-weight: 600;
+       }
+       .imgBlock {
+           padding: 10px 0 0 10px;
+       }
+        .price, .RemoveLink {
+            line-height: 60px;
+        } 
+    }
+    .saveCartBottom, .totalPrice {
+        outline: 0px solid red;
+        width: 100%;
+        padding: 10px;
+        @extend %border;
+    }
+    .saveCartBottom button {
+        font-weight: 500;
+        @extend %fontS
+    } 
+    .totalPrice {
+        font-weight: 600;
+    }
+    @media screen and (max-width: 414px) {
+        font-size: 14px;
+        .imgBlock {
+            img {
+                width: 60px;
+            }
+        }
+        .saveCartBottom button {
+            font-size: 14px;
+        }
+        .totalPrice {
+            font-size: 14px;
+        }
+    }
+}
